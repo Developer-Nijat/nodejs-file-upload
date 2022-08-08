@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="color: #000">File Upload | NodeJs</h1>
+
+        <form id="form">
+          <div id="success-message"></div>
+          <div class="input-group">
+            <label for="name">Select folder</label>
+            <select name="folder" id="folder">
+              <option value="">--Select--</option>
+              <option value="programming">Programming</option>
+              <option value="logo">Logo</option>
+              <option value="video">Video</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="files">Select files</label>
+            <input id="files" type="file" multiple/>
+          </div>
+          <button class="submit-btn" type="submit">Upload</button>
+        </form>
+      </div>
+    
+    <script src="./scripts.js"></script>
+</body>
+</html>
